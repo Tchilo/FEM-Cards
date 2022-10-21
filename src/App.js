@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import NftPreview from './Cards/NFT-preview-card/NFT-preview-card';
 import ExpensesChartComponent from './Cards/Expenses_chart_component/Expenses_chart_component';
+import { OrderSummaryComponent } from './Cards/Order-summary-component/Order-summary-component';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path='nft' element={<NftPreview />} />
         <Route path='Expenses_chart_component
 ' element={<ExpensesChartComponent />} />
+        <Route path='Order-Summary' element={<OrderSummaryComponent />} />
+
 
         {/* <Route path="teams" element={<Teams />}>
           <Route path=":teamId" element={<Team />} />
