@@ -19,7 +19,7 @@ export function OrderSummaryComponent() {
           <section className='order_price'>
             <ul>
               <li>
-                <img src={music} alt="music icon" aria-hidden="true" />
+                <img src={music} alt="" aria-hidden="true" />
               </li>
               <li>
                 <p className='plan'>Annual Plan</p>
