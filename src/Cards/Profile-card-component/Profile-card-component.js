@@ -4,7 +4,7 @@ import React from 'react'
 
 export function ProfileCardComponent() {
   return (
-    <main >
+    <main className='profile-card'>
       <article>
         <figure>
           <img src={hero} alt="man in an open speace " />
