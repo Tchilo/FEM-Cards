@@ -1,0 +1,120 @@
+@use '../../scss/reset' as *;
+@use '../../scss/breakpoints' as *;
+@use './colors' as *;
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@mixin common {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+  color: $Very-light-gray;
+  text-align: left;
+}
+
+@mixin btns($color) {
+  button {
+    border-radius: 25px;
+    border: none;
+    background-color: $Very-light-gray ;
+    color: $color;
+    padding: 12px 24px;
+    font-size: 14px;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: $color;
+      color: $Very-light-gray;
+      cursor: pointer;
+      outline: solid 1px $Very-light-gray;
+    }
+  }
+}
+
+@mixin paragraphs {
+  p {
+    width: 75%;
+    color: $Transparent-white;
+    line-height: 1.6rem;
+    font-family: 'Lexend Deca', sans-serif;
+    max-width: 550px;
+  }
+}
+
+.columns_cards {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
+
+
+  article {
+    padding: 40px 20px;
+
+    :nth-child(1) {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    :nth-child(3) {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    img {
+      width: 90%;
+    }
+
+    @include md {
+      flex-direction: row;
+      display: flex;
+
+      :nth-child(1) {
+        border-top-right-radius: none;
+      border-bottom-left-radius: 8px;
+      //   border-bottom-right-radius: 8px;
+      }
+
+      :nth-child(3) {
+        border-bottom-left-radius: none;
+        border-top-right-radius: 8px;
+      }
+    }
+
+  }
+
+  h1,
+  h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .sedans {
+    @include common;
+    @include paragraphs;
+    @include btns($Bright-orange);
+    background-color: $Bright-orange;
+  }
+
+  .suvs {
+    @include common;
+    @include paragraphs;
+    @include btns($Dark-cyan);
+    background-color: $Dark-cyan;
+  }
+
+  .luxury {
+    @include common;
+    @include paragraphs;
+    @include btns($Very-dark-cyan);
+    background-color: $Very-dark-cyan;
+  }
+
+
+}
