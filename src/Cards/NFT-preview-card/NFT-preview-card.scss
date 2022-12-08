@@ -15,12 +15,6 @@
   flex-direction: row;
 }
 
-body {
-  font-family: 'Outfit', sans-serif;
-  height: 100%;
-  font-size: 18px
-}
-
 .nft_bg {
   background-color: $Very-dark-blue-bg;
   height: 100vh;
@@ -30,9 +24,11 @@ body {
 }
 
 .nft_card {
+  font-family: 'Outfit', sans-serif;
   background: $Very-dark-blue-card;
   border-radius: 8px;
   min-width: 280px;
+  font-size: 18px;
   max-width: 300px;
   padding: 15px;
   display: flex;
@@ -71,6 +67,7 @@ body {
 
   .nft_img {
     width: 100%;
+
     img {
       height: 300px;
       width: 100%;

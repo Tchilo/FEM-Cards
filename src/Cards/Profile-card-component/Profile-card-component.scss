@@ -1,0 +1,17 @@
+@use '../../scss/reset' as *;
+@use '../../scss/breakpoints' as *;
+@use './colors' as *;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+.profile-card {
+  display: flex;
+  // height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $Dark-cyan;
+  // background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+  background-position: 10% 10%, 10% 10%;
+  background-repeat: no-repeat;
+}

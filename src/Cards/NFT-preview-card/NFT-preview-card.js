@@ -11,7 +11,7 @@ const NftPreview = () => {
     <div className='nft_bg'>
 
       <main className='nft_card'>
-        <div className='nft_imgs'>
+        <section className='nft_imgs'>
           <div className="nft_tint"></div>
           <div className="nft_img">
             <img src={hero} alt="#" />
@@ -19,11 +19,11 @@ const NftPreview = () => {
           <div className='nft_view'>
             <img src={view} alt="#" size='10' />
           </div>
-        </div>
+        </section>
         <h1>Equilibrium #3429</h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>
 
-        <div className='nft_icons'>
+        <section className='nft_icons'>
           <div>
             <img src={ethereum} alt="#" />
             <span className='nft_abrv'>0.041 ETH</span>
@@ -32,7 +32,7 @@ const NftPreview = () => {
             <img src={clock} alt="clock" />
             <span> 3 days left</span>
           </div>
-        </div>
+        </section>
 
         <div className='hr'></div>
         <div className='nft_person'>
